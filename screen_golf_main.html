@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="screen_golf_main.css">
+    <title>스크린 골프</title>
+</head>
+<body>
+    <header>
+        <div class="top_logo_img">
+            <a href="index.html"><img src="img/LOGO-DESIGN.png"></a>
+        </div>
+        <div>
+            <ul id="top_menu_list_pc" class="top_menu">
+                <li> <a href="#L_about_us">회사소개</a></li>
+                <li> <a href="#L_b_story">제품소개</a></li>
+                <li> <a href="#L_qna">Q&A</a></li>
+                <li> <a href="#">매장찾기</a></li>
+                <li> <a href="#">제품문의</a></li>
+                <li> <a href="login.html"><div class="login">로그인</div></a></li>
+            </ul>
+        </div>
+        <div id="top_menu_list_m" class="top_menu_list2">
+            <div id="menu-toggle">
+                <img class="menu_m_img" src="img/grid-outline.svg">
+            </div>
+            <nav id="menu">
+                <div id="menu-close"><img src="img/close-outline.svg" alt=""></div>
+                <ul>
+                    <li> <a href="#L_about_us">회사소개</a></li>
+                    <li> <a href="#L_b_story">제품소개</a></li>
+                    <li> <a href="#L_qna">Q&A</a></li>
+                    <li> <a href="#">매장찾기</a></li>
+                    <li> <a href="#">제품문의</a></li>
+                </ul>
+            </nav>
+            <script>
+                let menu = document.getElementById("menu");
+                let toggle = document.getElementById("menu-toggle");
+                let close = document.getElementById("menu-close")
+
+                function toggleMenu(){
+                    if(menu.style.right === "-250px") {
+                        menu.style.right = "0";
+                    }else{
+                        menu.style.right = "-250px";
+                    }
+                }
+                
+                function closeMenu(){
+                    menu.style.right = "-250px"
+                }
+
+                toggle.addEventListener("click",toggleMenu);
+                close.addEventListener("click",closeMenu);
+            </script>
+            <a href="login.html"><div class="login">로그인</div></a>
+        </div>
+    </header>
+    <section>
+        <div class="s1">
+            <img class="menu_img" src="img/NBpng.png">
+            <div class="menu_text_r">
+                <h1>스크린 골프</h1>
+                <p>골퍼의 꿈이 현실이되고 <br> 언제나 새로운 즐거움이 만들어지는곳</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

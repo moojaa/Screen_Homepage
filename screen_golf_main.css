@@ -1,0 +1,242 @@
+/* reset.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: black;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* reset.css */
+
+@media(min-width: 1000px){
+    #top_menu_list_m {
+        display: none;
+    }
+
+    body{
+
+        padding-top: 70px;
+    }
+
+    header{
+        z-index: 100;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 70px;
+        background: #fff;
+    }
+
+    .top_logo_img{
+        margin-left: 20px;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .top_logo_img > a > img {
+        height: 30px;
+        vertical-align: middle;
+    }
+
+    .top_menu {
+        display: flex;
+        line-height: 70px;
+        margin-right: 20px;
+    }
+
+    .top_menu > li {
+        font-weight: 500;
+        font-size: 20px;
+        margin-right: 15px;
+        margin-left: 15px;
+        text-align: center;
+    }
+
+    .login{
+        line-height: 50px;
+        text-align: center;
+        position: relative;
+        top: 10px;
+        background-color: #3492d5;
+        width: 128px;
+        height: 50px;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .login:hover{
+        background-color: #24699a;
+        transition: all 0.2s ease-in;
+    }
+
+    .s1{
+        position: relative;
+        width: 100%;
+    }
+
+    .menu_img{
+        width: 100%;
+        filter: brightness(0.3);
+    }
+
+}
+
+@media(max-width: 1000px){
+    #top_menu_list_pc {
+        display: none;
+    }
+
+    .top_menu_list2{
+        display: flex;
+        padding: 15px 20px 15px 20px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .menu_m_img{
+        margin-left: 20px;
+        height: 30px;
+        vertical-align: middle;
+    }
+
+    #menu {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+        z-index: 500;
+    }
+
+    #menu li{
+        padding: 15px;
+        font-size: 17px;
+        border-bottom: 1px solid #444;
+    } 
+
+    #menu li:last-child{
+        border-bottom: none;
+    }
+    
+    #menu-toggle{
+        cursor: pointer;
+    }
+
+    #menu-close{
+        display: flex;
+        justify-content: end;
+    }
+
+    #menu-close >img{
+        width: 30px;
+        padding: 10px;
+    }
+
+    body{
+        background-color: black;
+        padding-top: 60px;
+    }
+
+    header{
+        z-index: 100;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+        background: #fff;
+    }
+    
+    .top_logo_img{
+        margin-left: 20px;
+        padding: 20px 0px 20px 0px;
+    }
+    
+    .top_logo_img > a > img {
+        height: 20px;
+        vertical-align: middle;
+    }
+    
+    .top_menu {
+        display: flex;
+        line-height: 70px;
+        margin-right: 20px;
+    }
+    
+    .top_menu > li {
+        font-weight: 500;
+        font-size: 20px;
+        margin-right: 15px;
+        margin-left: 15px;
+        text-align: center;
+    }
+    
+    .login{
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        background-color: #3492d5;
+        width: 80px;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .login:hover{
+        background-color: #24699a;
+        transition: all 0.2s ease-in;
+    }
+    
+}

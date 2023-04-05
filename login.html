@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>로그인</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="text" id="id" required>
+                        <label for="">아이디 또는 전화번호</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="password" required>
+                        <label for="">비밀번호</label>
+                    </div>
+                    <div class="save">
+                        <input type="checkbox" id="toggle" hidden>
+                        <label for="toggle" class="toggle_switch">
+                            <span class="toggle_button"></span>
+                        </label>
+                        <span class="save_t">로그인 상태 유지</span>
+                    </div>
+                    <button type="button" onclick="login()">로그인</button>
+                    <div class="register">
+                        <a href="#">회원가입</a>
+                        <div></div>
+                        <a href="#">아이디 찾기</a>
+                        <div></div>
+                        <a href="#">비밀번호 찾기</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            function login() {
+                let id = document.getElementById("id").value;
+                let password = document.getElementById("password").value;
+
+                // 아이디와 비밀번호 확인
+                if (id === "test1" && password === "1111") {
+                    // 로그인 성공
+                    alert("로그인에 성공했습니다.");
+                    window.location.href ="index.html"; // 페이지 이동
+                } else {
+                    // 로그인 실패
+                    alert("아이디 또는 비밀번호가 일치하지 않습니다.");
+                }
+            }
+        </script>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="booking.css">
+    <title>예약</title>
+</head>
+<body>
+    <header>
+        <div class="top_logo_img">
+            <a href="index.html"><img src="img/logo.png"></a>
+        </div>
+        <div>
+            <ul id="top_menu_list_pc" class="top_menu">
+                <li> <a href="#L_about_us">회사소개</a></li>
+                <li> <a href="#L_b_story">제품소개</a></li>
+                <li> <a href="#L_qna">Q&A</a></li>
+                <li> <a href="#">매장찾기</a></li>
+                <li> <a href="#">제품문의</a></li>
+                <li> <a href="login.html"><div class="login">로그인</div></a></li>
+            </ul>
+        </div>
+        <div id="top_menu_list_m" class="top_menu_list2">
+            <div id="menu-toggle">
+                <img class="menu_m_img" src="img/grid-outline.svg">
+            </div>
+            <nav id="menu">
+                <div id="menu-close"><img src="img/close-outline.svg" alt=""></div>
+                <ul>
+                    <li> <a href="#L_about_us">회사소개</a></li>
+                    <li> <a href="#L_b_story">제품소개</a></li>
+                    <li> <a href="#L_qna">Q&A</a></li>
+                    <li> <a href="#">매장찾기</a></li>
+                    <li> <a href="#">제품문의</a></li>
+                </ul>
+            </nav>
+            <script>
+                let menu = document.getElementById("menu");
+                let toggle = document.getElementById("menu-toggle");
+                let close = document.getElementById("menu-close")
+
+                function toggleMenu(){
+                    if(menu.style.right === "-250px") {
+                        menu.style.right = "0";
+                    }else{
+                        menu.style.right = "-250px";
+                    }
+                }
+                
+                function closeMenu(){
+                    menu.style.right = "-250px"
+                }
+
+                toggle.addEventListener("click",toggleMenu);
+                close.addEventListener("click",closeMenu);
+            </script>
+            <a href="login.html"><div class="login">로그인</div></a>
+        </div>
+    </header>
+    <div class="top_h">
+        <img class="top_h_b" src="img/apple-1867752_1920.jpg" alt="">
+        <div class="c_icon"><img src="img/calendar-outline.svg" alt=""><h1>예약하기</h1></div>
+    </div>
+    <section>
+        <div class="booking">
+            <div>
+                <div class="booking_m">종목</div>
+                <div class="booking_m1">                
+                    <select class="time" name="month" id="month">
+                        <option value="1">골프</option>
+                        <option value="2">배드민턴</option>
+                        <option value="3">파크골프</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div class="booking_m">지점</div>
+                <div class="booking_m1">
+                    <select class="time" name="month" id="month">
+                        <option value="1">마포점</option>
+                        <option value="2">역삼점</option>
+                        <option value="3">구월점</option>
+                        <option value="4">주안점</option>
+                        <option value="5">영등포점</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div class="booking_m">날짜</div>
+                <div class="booking_m1_s">
+                    <div>
+                        <select name="month" id="month">
+                            <option value="1">1월</option>
+                            <option value="2">2월</option>
+                            <option value="3">3월</option>
+                            <option value="4">4월</option>
+                            <option value="5">5월</option>
+                            <option value="6">6월</option>
+                            <option value="7">7월</option>
+                            <option value="8">8월</option>
+                            <option value="9">9월</option>
+                            <option value="10">10월</option>
+                            <option value="11">11월</option>
+                            <option value="12">12월</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="day" id="day"></select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                    <div class="booking_m">시간</div>
+                    <div class="booking_m1"><div>
+                        <select class="time" name="time" id="">
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                            <option value="22:30">22:30</option>
+                            <option value="23:00">23:00</option>
+                            <option value="23:30">23:30</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div><button type="button" class="button" onclick="booking()">예약하기</button></div>
+    </section>
+    <script>
+        const monthSelect = document.getElementById('month');
+        const daySelect = document.getElementById('day');
+
+        function updateDays() {
+        const month = parseInt(monthSelect.value);
+        let days = 31;
+
+        if (month === 2) {
+            days = 28;
+        } else if ([4, 6, 9, 11].includes(month)) {
+            days = 30;
+        }
+
+        // 일 선택란을 비웁니다.
+        daySelect.innerHTML = '';
+
+        // 일 선택란에 옵션을 추가합니다.
+        for (let i = 1; i <= days; i++) {
+            const option = document.createElement('option');
+            option.value = i;
+            option.textContent = i + '일';
+            daySelect.appendChild(option);
+        }
+        }
+
+        // 월 선택이 변경되면 일 선택을 업데이트합니다.
+        monthSelect.addEventListener('change', updateDays);
+
+        // 초기화합니다.
+        updateDays();
+
+        function booking(){
+            alert("예약되었습니다.");
+        }
+    </script>
+</body>
+</html>
